@@ -160,8 +160,8 @@ function renderRestaurants(list) {
             <div class="restaurant-info">
                 <h3>${r.name}</h3>
                 <p>${r.cuisine}</p>
-                <p class="rating">${stars} ${r.rating} ⭐</p>
-                <p>🕐 ${r.deliveryTime}</p>
+                <p class="rating">${stars} ${r.rating}</p>
+                <p>${r.deliveryTime}</p>
                 <span class="open-badge">OPEN</span>
             </div>
         `;
@@ -183,8 +183,8 @@ function showMenu(restaurantId) {
 
     restaurant.menu.forEach(function (item) {
         const badge = item.type === "veg"
-            ? `<span class="veg-badge">🟢 VEG</span>`
-            : `<span class="nonveg-badge">🔴 NON-VEG</span>`;
+            ? `<span class="veg-badge">VEG</span>`
+            : `<span class="nonveg-badge">NON-VEG</span>`;
 
         const card = document.createElement("div");
         card.className = "menu-item";
@@ -303,7 +303,7 @@ function updateCartUI() {
                 <button onclick="changeQty(${c.item.id}, 1)">+</button>
             </div>
             <span>₹${c.item.price * c.qty}</span>
-            <button class="remove-btn" onclick="removeFromCart(${c.item.id})">🗑</button>
+            <button class="remove-btn" onclick="removeFromCart(${c.item.id})">X</button>
         `;
         cartList.appendChild(row);
     });
@@ -405,7 +405,7 @@ function getStars(rating) {
 function showCartNotification(itemName) {
     // Create a small toast
     const toast = document.createElement("div");
-    toast.textContent = "✅ " + itemName + " added to cart!";
+    toast.textContent = itemName + " added to cart!";
     toast.style.cssText = `
         position: fixed;
         bottom: 30px;
