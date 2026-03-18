@@ -3,7 +3,7 @@
 const restaurants = [
     {
         id: 1,
-        name: "Burger King",
+        name: "Burgers Palace",
         cuisine: "American, Burgers",
         rating: 4.3,
         deliveryTime: "25-35 mins",
@@ -17,7 +17,7 @@ const restaurants = [
     },
     {
         id: 2,
-        name: "Pizza Palace",
+        name: "Pizza Hut",
         cuisine: "Italian, Pizza",
         rating: 4.5,
         deliveryTime: "30-40 mins",
@@ -31,7 +31,7 @@ const restaurants = [
     },
     {
         id: 3,
-        name: "Spice Garden",
+        name: "Indian Classics",
         cuisine: "Indian, Biryani",
         rating: 4.1,
         deliveryTime: "40-50 mins",
@@ -59,7 +59,7 @@ const restaurants = [
     },
     {
         id: 5,
-        name: "The Sandwich Co.",
+        name: "The Sandwich hub",
         cuisine: "Sandwiches, Wraps",
         rating: 3.9,
         deliveryTime: "15-25 mins",
@@ -72,7 +72,7 @@ const restaurants = [
     },
     {
         id: 6,
-        name: "Dosa House",
+        name: "South Indian Tiffins",
         cuisine: "South Indian",
         rating: 4.4,
         deliveryTime: "20-30 mins",
@@ -86,7 +86,7 @@ const restaurants = [
     },
     {
         id: 7,
-        name: "Tandoori Nights",
+        name: "Tandoori Express",
         cuisine: "North Indian, Punjabi",
         rating: 4.6,
         deliveryTime: "35-45 mins",
@@ -100,7 +100,7 @@ const restaurants = [
     },
     {
         id: 8,
-        name: "Sweet Tooth",
+        name: "sweet delights",
         cuisine: "Desserts, Bakery",
         rating: 4.8,
         deliveryTime: "15-25 mins",
@@ -114,7 +114,7 @@ const restaurants = [
     },
     {
         id: 9,
-        name: "Juice Junction",
+        name: "Juices",
         cuisine: "Beverages, Healthy",
         rating: 4.2,
         deliveryTime: "10-20 mins",
